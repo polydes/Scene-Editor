@@ -1,0 +1,37 @@
+<!--
++==========================================================================
+| Scene Editor Extension
++==========================================================================
+-->
+
+<project name="stencyl" basedir="." default="dist">
+	
+	<property name="pkg" value="com/polydes/sceneplugin" />
+	<property name="main" value="com.polydes.sceneplugin.ScenePluginExtension" />
+	
+	<property name="name" value="Scene Plugin Extension" />
+	<property name="description" value="Extend the Scene Editor." />
+	<property name="author" value="Justin Espedal" />
+	<property name="website" value="http://www.polydes.com" />
+	<property name="internalVersion" value="1" />
+	<property name="version" value="0.0.1" />
+	
+	<include file="../Common/build-helper.xml" as="common" />
+	
+	<target name="dist">
+		
+		<var name="usinglibs" value="false" />
+		
+		<antcall>
+			
+			<target name="common.compile" />
+			
+			<target name="common.copy-resources" />
+			
+			<target name="common.makejar" />
+			
+		</antcall>
+		
+	</target>
+
+</project>

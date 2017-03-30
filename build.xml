@@ -4,7 +4,7 @@
 +==========================================================================
 -->
 
-<project name="stencyl" basedir="." default="dist">
+<project name="polydes/scene-editor" basedir="." default="dist">
 	
 	<property name="pkg" value="com/polydes/sceneplugin" />
 	<property name="main" value="com.polydes.sceneplugin.ScenePluginExtension" />
